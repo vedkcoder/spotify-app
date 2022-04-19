@@ -5,7 +5,7 @@ import './style.css';
 
 const LoginButton = () => {
     const MY_WEBSITE: string = "https://hmi-project.vercel.app/callback"
-    const REDIRECT_URL: string = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&response_type=token&redirect_uri=${MY_WEBSITE}&scope=playlist-modify-private`
+    const REDIRECT_URL: string = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&response_type=token&redirect_uri=${MY_WEBSITE}&scope=hmi`
    
     return (
         <a href={REDIRECT_URL}>
